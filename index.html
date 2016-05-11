@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <script>
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('clock').innerHTML =
+                h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+        }
+
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i
+            }; // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
+</head>
+
+<body onload="startTime()">
+    <div id="clock"></div>
+    <div class="container">
+        <a href="http://google.com" id="google" class="links" target="_blank"><div class="links-content"><div><span>Google</span></div></div></a>
+        <a href="http://facebook.com" id="facebook" class="links" target="_blank"><div class="links-content"><div><span>Facebook</span></div></div></a>
+        <a href="http://youtube.com" id="youtube" class="links" target="_blank"><div class="links-content"><div><span>Youtube</span></div></div></a>
+        <a href="http://instagram.com" id="instagram" class="links" target="_blank"><div class="links-content"><div><span>Instagram</span></div></div></a>
+        <a href="http://naver.com" id="naver" class="links" target="_blank"><div class="links-content"><div><span>Naver</span></div></div></a>
+        <a href="https://github.com/Curzy/" id="github" class="links" target="_blank"><div class="links-content"><div><span>Github</span></div></div></a>
+    </div>
+</body>
+
+</html>

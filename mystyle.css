@@ -1,0 +1,86 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.container {
+  width: 70%;
+  height: 70%;
+  margin: 40px auto;
+}
+.outer {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.centered {
+  position: relative;
+  display: inline-block;
+ 
+  width: 70%;
+  padding: 1em;
+}
+
+.links {
+    position: relative;
+    width: 33.333333333333333333%;
+    display: block;
+    float: left;
+    text-align: center;
+    font-size:2em;
+}
+.links:before{
+    content:"";
+    display: block;
+    padding-top: 100%; 
+}
+.links-content{
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+}
+.links-content div {
+   display: table;
+   width: 100%;
+   height: 100%;
+}
+.links-content span {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: white
+}
+
+#google {
+    background-color: #fbbc05;
+}
+
+#facebook {
+    background-color: #3b5998;
+}
+
+#youtube {
+    background-color: #e52d27;
+}
+
+#instagram {
+    background-color: #3f729b;
+}
+
+#naver {
+    background-color: #23b300;
+}
+
+#github {
+    background-color: #151013;
+}
+
