@@ -1,58 +1,116 @@
-html,
+html {
+    background: url(../images/todaysduty.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
 body {
     width: 100%;
     height: 100%;
     text-align: center;
+    color: white;
+    font-family: "Futura";
 }
+
+.mask-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.75;
+    z-index: -1;
+}
+
+.leftzone {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 70%;
+    min-height: 100%;
+    opacity: 0;
+    z-index: 1;
+}
+#field {
+    position:relative;
+    width 80%;
+    float:inherit;
+    height:100%;
+    z-index:-1;
+}
+#simple {
+    position:relative;
+    font-size: 3em;
+    opacity: 0.9;
+}
+
+#clock {
+    font-size: 10em;
+    opacity: 0.9;
+}
+
+#sidebar {
+    width: 10%;
+    float: right;
+    height: 100%;
+    margin-right: 5%;
+}
+
 .container {
-  width: 70%;
-  height: 70%;
-  margin: 40px auto;
+    width: 100%;
+    height: 100%;
+    margin: 40px auto;
 }
+
 .outer {
-  display: table;
-  width: 100%;
-  height: 100%;
+    display: table;
+    width: 100%;
+    height: 100%;
 }
+
 .inner {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
+
 .centered {
-  position: relative;
-  display: inline-block;
- 
-  width: 70%;
-  padding: 1em;
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    padding: 1em;
 }
 
 .links {
     position: relative;
-    width: 33.333333333333333333%;
+    width: 100%;
     display: block;
     float: left;
     text-align: center;
-    font-size:2em;
+    font-size: 1em;
+    opacity: 0.9;
 }
-.links:before{
-    content:"";
+
+.links:before {
+    content: "";
     display: block;
-    padding-top: 100%; 
+    padding-top: 100%;
 }
-.links-content{
-    position:  absolute;
+
+.links-content {
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     color: white;
 }
+
 .links-content div {
-   display: table;
-   width: 100%;
-   height: 100%;
+    display: table;
+    width: 100%;
+    height: 100%;
 }
+
 .links-content span {
     display: table-cell;
     text-align: center;
@@ -83,4 +141,3 @@ body {
 #github {
     background-color: #151013;
 }
-
