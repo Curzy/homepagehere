@@ -1,13 +1,10 @@
 html {
-    background: url(../images/todaysduty.jpg) no-repeat center center fixed;
-    background-size: cover;
 }
 
 body {
     width: 100%;
     height: 100%;
     text-align: center;
-    color: white;
     font-family: "Futura";
 }
 
